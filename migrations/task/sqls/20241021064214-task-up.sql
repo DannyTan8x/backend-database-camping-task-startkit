@@ -15,7 +15,7 @@
 insert into
     "USER" (name, email, role)
 values
-    --( '李燕容', 'lee2000@hexschooltest.io','USER'),
+    ('李燕容', 'lee2000@hexschooltest.io', 'USER'),
     ('王小明', 'wXlTq@hexschooltest.io', 'USER'),
     ('肌肉棒子', 'muscle@hexschooltest.io', 'USER'),
     ('好野人', 'richman@hexschooltest.io', 'USER'),
@@ -664,4 +664,4 @@ FROM
 WHERE
     created_at >= '2024-11-01 00:00:00'
     AND created_at <= '2024-11-30 23:59:59'
-    AND status not like '課程已取消';
+    AND status not like '%取消%';
